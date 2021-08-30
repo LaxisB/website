@@ -5,4 +5,7 @@ export default {
         src: { url: '/build' },
     },
     plugins: [['@snowpack/plugin-typescript']],
+    buildOptions: {
+        out: 'docs',
+    },
 };
