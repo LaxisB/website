@@ -1,0 +1,165 @@
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --nord0: #2e3440;
+    --nord1: #3b4252;
+    --nord2: #434c5e;
+    --nord3: #4c566a;
+    --nord4: #d8dee9;
+    --nord5: #e5e9f0;
+    --nord6: #eceff4;
+    --nord7: #8fbcbb;
+    --nord8: #88c0d0;
+    --nord9: #81a1c1;
+    --nord10: #5e81ac;
+    --nord11: #bf616a;
+    --nord12: #d08770;
+    --nord13: #ebcb8b;
+    --nord14: #a3be8c;
+    --nord15: #b48ead;
+
+    --background: var(--nord6);
+    --text: var(--nord0);
+    --text-dark: var(--nord1);
+    --gray-light: var(--nord2);
+    --gray: var(--nord4);
+    --gray-dark: var(--nord5);
+    --accent: var(--nord8);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+    font-size: 1.6rem;
+    line-height: 1.5em;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+        Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto 3em auto;
+    padding: 0 2em;
+}
+
+.menu {
+    padding: 0 1em;
+    display: flex;
+    flex-direction: row;
+}
+.menu__link {
+    padding: 1em;
+    margin-right: 1em;
+}
+.menu__logo {
+    height: 2em;
+    fill: var(--nord2);
+    transition: fill 100ms ease-out;
+}
+.menu__link:hover svg {
+    fill: var(--accent);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    clear: both;
+    line-height: 1em;
+}
+h1 {
+    font-size: 4em;
+    margin-bottom: 2.42424rem;
+    font-weight: 300;
+    line-height: 1em;
+}
+h2 {
+    font-size: 3.33333em;
+    margin-bottom: 2.0202rem;
+    line-height: 1em;
+}
+h3 {
+    font-size: 2.66667em;
+    margin-bottom: 1.61616rem;
+    line-height: 1em;
+}
+h4 {
+    font-size: 2em;
+    margin-bottom: 1.21212rem;
+    line-height: 1em;
+}
+p {
+    margin: auto auto 1.5rem;
+}
+
+p + p {
+    margin-top: -1.5rem;
+}
+
+small {
+    font-size: 65%;
+}
+
+figure {
+    float: left;
+    margin: 1em;
+}
+pre {
+    white-space: pre;
+}
+
+pre code {
+    white-space: -moz-pre-wrap;
+    white-space: pre-wrap;
+}
+
+code {
+    white-space: pre;
+    font-family: monospace;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-dark);
+    position: relative;
+}
+a:before {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background: var(--accent);
+    width: 60%;
+}
+
+/*
+ * NORD PALETTE
+ *
+ *
+ * Copyright (c) 2016-present Arctic Ice Studio <development@arcticicestudio.com>
+ * Copyright (c) 2016-present Sven Greb <development@svengreb.de>
+ *
+ * Project:    Nord
+ * Version:    0.2.0
+ * Repository: https://github.com/arcticicestudio/nord
+ * License:    MIT
+ * References:
+ *   https://www.w3.org/TR/css-variables
+ *   https://www.w3.org/TR/selectors/#root-pseudo
+ *   https://drafts.csswg.org/css-variables
+ *   https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables
+ *   http://warpspire.com/kss
+ *   https://github.com/kss-node/kss-node
+ */
