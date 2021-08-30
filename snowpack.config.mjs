@@ -6,6 +6,6 @@ export default {
     },
     plugins: [['@snowpack/plugin-typescript']],
     buildOptions: {
-        out: 'docs',
+        out: 'build',
     },
 };
